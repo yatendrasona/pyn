@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+body, html{
+	height: auto;
+	padding: 0;
+	margin: 0;
+	font-family: 'Sniglet', cursive;
+}
+h1{
+	font-weight: normal;
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 100%;
+	color: #F90;
+	text-align: center;
+
+}
+
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 24s;
+	-webkit-animation: myfirst 24s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+
+header{
+	height: 160px;
+	background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+}
+
+#form{
+	height: 100%;	
+	background-color: #98d4f3 !important;
+	overflow: hidden;
+	position: relative;
+	padding-bottom:20px;
+	margin-left:0px !important;
+	
+}
+form{
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 40px;
+	color: white;
+	position: relative;
+	
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea{
+	width: 100%;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+.input{width: 95% !important;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	border-radius:5px !important;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	margin-bottom:10px !important;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+	.input-2{width:30% !important;	
+	border: none;
+	border-radius: 20px;
+	margin:0 1%;
+	float:left;
+	outline: none;
+	padding: 10px;
+	border-radius:5px !important;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	margin-bottom:10px !important;
+	color: #666;
+	background-color:#f1f1f1;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #ccc;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+	input[type="button"]{
+	float:left;
+	width:30%;
+	margin-top:5px;
+	height:50px;
+	cursor: pointer;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+	.input-3{width:21% !important;
+	background-color: #999 !important;	
+	color:white !important;
+	border: none;
+	border-radius: 20px;
+	margin:0;
+	float:left;
+	outline: none;
+	padding: 10px;
+	border-radius:5px !important;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	margin-bottom:10px !important;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+input:focus, textarea:focus{
+	border: solid 3px #77bde0;	
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"]{
+	background-color: #F90;
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+	width:95%;
+	margin-top:5px;
+	border:5px;
+	height:50px;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+button{
+	background-color: #F90;
+	color: white;
+	cursor: pointer;
+	margin-top: 5px;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+input[type="file"]{
+	float:left;
+	width:30%;
+	height:46px;
+	margin-top:6px;
+	border:none;
+	padding:0px !important;
+	cursor: pointer;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover{
+	background-color: #e58f0e;
+	
+}
+label{
+	margin-top: 10px;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 90%;
+	margin:0 5%;
+	padding-top: 2px;
+	float:left;
+}
+.formgroup-small{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 20%;
+	margin:0 1% 0 5%;
+	padding-top: 2px;
+	float:left;
+}
+.formgroup{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
+	
+}
+.formgroup-active{
+	/*background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');*/
+}
+.formgroup-error{
+	/*background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');*/
+	color: red;
+}
+
+
+.funkyradio div {
+    /*clear: both;
+    margin: 0 50px;*/
+    overflow: hidden;
+	float:left;
+}
+.funkyradio label {
+    /*min-width: 400px;*/
+    width: 0%;
+	float:left;
+    border-radius: 3px;
+    font-weight: normal;
+}
+.funkyradio input[type="radio"]:empty{
+    display: none;
+}
+.funkyradio input[type="radio"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    cursor: pointer;
+}
+.funkyradio input[type="radio"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2.5em;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #fff;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before{
+    box-shadow: 0 0 0 1px #999;
+}
+.funkyradio-default input[type="radio"]:checked ~ label:before {
+    color: #333;
+    background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"] ~ label:before, .funkyradio-primary input[type="radio"]:checked ~ label:before {
+    color: #666;
+    background-color: #fff !important;
+	border:1px solid #aaa;
+}
+.funkyradio-ocean-blue input[type="radio"] ~ label:before, .funkyradio-ocean-blue input[type="radio"]:checked ~ label:before{
+    color: #666;
+    background-color: #def2fe !important;
+	border:1px solid #21779c;
+}
+.funkyradio-light-pink input[type="radio"] ~ label:before, .funkyradio-light-pink input[type="radio"]:checked ~ label:before{
+    color: #666;
+    background-color: #fff0ff !important;	
+	border:1px solid #af5572;
+}
+.funkyradio-light-green input[type="radio"] ~ label:before, .funkyradio-light-green input[type="radio"]:checked ~ label:before {
+    color: #666;
+    background-color: #faffee !important;	
+	border:1px solid #426817;
+}
+.funkyradio-light-yellow input[type="radio"] ~ label:before, .funkyradio-light-yellow input[type="radio"]:checked ~ label:before {
+    color: #666;
+    background-color: #fffcd5 !important;
+	border:1px solid #d88f01;
+}
+@media(min-width:0) and (max-width:1000px) {
+	input[type="file"], .input-2, .input-3, .input{width:95% !important; margin:0;}
+	 .formgroup-small{width:90%;}
+	}
